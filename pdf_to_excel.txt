@@ -1,0 +1,18 @@
+How to Use the Script:
+Install Necessary Packages: Make sure you have pymupdf, pandas, and openpyxl installed. You can install these packages using the following command:
+
+
+pip install pymupdf pandas openpyxl
+Set Input Folder Path: Replace 'path/to/your/pdf/folder' with the path to the folder where your PDF resumes are stored.
+
+Set Output Excel File Path: Replace 'path/to/output.xlsx' with the desired path and filename for the resulting Excel file.
+
+Run the Script: Save the script as a .py file and run it using Python. For example, you can save it as extract_resumes.py and run it from the command line:
+
+python extract_resumes.py
+Check the Output: After the script runs, it will create an Excel file at the specified output path containing the extracted data from all the PDF resumes in the input folder.
+
+Notes:
+Adjust Parsing Logic: The parsing logic in the parse_resume_text function is a simple example based on specific keywords (e.g., 'Name:', 'Email:', etc.). You may need to adjust this function based on the actual format and content of the resumes you are processing.
+Error Handling: For better robustness, consider adding error handling to manage cases where a PDF might not be parsed correctly or does not contain the expected information.
+This script provides a basic framework to get you started with automating the extraction of resume data from PDFs and consolidating it into an Excel file. Adjustments to the parsing logic will likely be necessary to suit your specific use case.
